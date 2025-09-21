@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks</title>
+</head>
+    <style>
+        *{padding: 0; margin: 0;}
+        a{text-decoration: none;}
+        ul li{list-style: none;}
+        nav{
+            height: 120px; 
+            top: 0; left: 0;
+            background-color: #f6f5ef;
+            border-bottom: 1px solid #e5e5e5;
+            border-top: 5px solid #000;
+            display: flex;
+            flex-direction: row;
+        }
+        #menu{
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+        }
+        #cc{
+            width: 80%;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #cs{
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #cs li a{
+            font: normal 13px Avenir, Arial, georgia;
+            color: #555;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 0 15px; */
+        }
+        .border{border-right: solid 1px rgba(85, 85, 85, 0.06) ;}
+        .dis{padding: 0 15px;}
+        #search{
+            border: solid 1px rgba(85, 85, 85, 0.3) ;
+            height: 34px;
+            width: 34px;
+            background: white;
+            padding: 0;
+        }
+        #button{
+            width: 53px;
+            padding: 0 -15px;
+            height: 45px;
+        }
+        #menu1{
+            border: solid black;
+            height: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-size: 13px;
+            /* margin-top: 8px; */
+            /* flex: 1; */
+        }
+        .menu_list{
+            border: solid black;
+            display: inline;
+            padding:  0 21px;
+            line-height: 30px;
+            /* padding-top: 8px; */
+            height: 100%;
+        }
+        .menu_list a{color: #333;}
+        .menu_list_sb{display: none;display: 120px;}
+        #menu1_1:hover, #menu1_1 a{
+            color: white;
+            background-color: rgb(49, 47, 47);
+        }#menu1_1:hover, #menu1_1{
+            color: white;
+            background-color: rgb(49, 47, 47);
+            /* display: flex; */
+            /* flex-direction: row; */
+        }
+        #menu1_1:hover .menu_list_sb {
+            display: flex;
+            /* margin-top: 120px; */
+            /* flex-direction: row; */
+            background-color: rgb(49, 47, 47);
+        }
+        .menu_list_sb a{
+            /* display: block; */
+            /* top: 120px; */
+            color: white;
+        }
+        
+    </style>
+<body>
+    <nav>
+        <div id="menu">
+            <div id="logo"><a href="/"><img src="./images/logo.png" alt="logo"></a></div>
+            <!-- <img src="./logo.png" alt="logo"> -->
+            <div id="cc">
+                <ul id="cs">
+                    <li><a href="#" class="border dis">Sing In</a></li>
+                    <li><a href="#" class="border dis">My Starbucks</a></li>
+                    <li><a href="#" class="border dis">Customer Service & Ideas</a></li>
+                    <li><a href="#" class="dis">Find a Store</a></li>
+                    <li><a href="#" id="search"><img src="./images/icon_magnifier_black.png" alt="search"></a></li>
+                    <li><a href="#" id=button></a></li>
+                </ul>
+                <div id="menu1">
+                    <div id="menu1_1" class="menu_list"><a href="#">COFFEE</a>
+                        <!-- <div class="menu_list_sb"><a href="#">커피</a>
+                            <ul>
+                                <li><a href="#">스타벅스 원두</a></li>
+                                <li><a href="#">스타벅스 비아</a></li>
+                                <li><a href="#">스타벅스 오리가미</a></li>
+                                <li><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                                <li><a href="#">나와 어울리는 커피</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">커피 이야기</a>
+                            <ul>
+                                <li><a href="#">농장에서 우리의 손으로</a></li>
+                                <li><a href="#">최상의 아라비카 원두</a></li>
+                                <li><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                                <li><a href="#">스타벅스 디카페인</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">스타벅스 리저브</a>
+                            <ul>
+                                <li><a href="#">RESERVE MAGAZINE</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">에스프레소 음료</a>
+                            <ul>
+                                <li><a href="#">도피오</a></li>
+                                <li><a href="#">에스프레소 마키아또</a></li>
+                                <li><a href="#">아메리카노</a></li>
+                                <li><a href="#">마키아또</a></li>
+                                <li><a href="#">카푸치노</a></li>
+                                <li><a href="#">라떼</a></li>
+                                <li><a href="#">모카</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">최상의 커피를 즐기는 법<a>
+                            <ul>
+                                <li><a href="#">커피 프레스</a></li>
+                                <li><a href="#">푸어 오버</a></li>
+                                <li><a href="#">아이스 푸어 오버</a></li>
+                                <li><a href="#">커피 메이커</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="menu_list"><a href="#">MENU</a>
+                        <div class="menu_list_sb"><a href="#">음료</a>
+                            <ul>
+                                <li><a href="#">콜드 브루</a></li>
+                                <li><a href="#">브루드 커피</a></li>
+                                <li><a href="#">에스프레소</a></li>
+                                <li><a href="#">프라푸치노</a></li>
+                                <li><a href="#">블렌디드</a></li>
+                                <li><a href="#">스타벅스 리프레셔</a></li>
+                                <li><a href="#">스타벅스 피지오</a></li>
+                                <li><a href="#">티(티바나)</a></li>
+                                <li><a href="#">기타 제조 음료</a></li>
+                                <li><a href="#">스타벅스 주스(병음료)</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">푸드</a>
+                            <ul>
+                                <li><a href="#">브레드</a></li>
+                                <li><a href="#">케이크</a></li>
+                                <li><a href="#">샌드위치 & 샐러드</a></li>
+                                <li><a href="#">따뜻한 푸드</a></li>
+                                <li><a href="#">과일 & 요거트</a></li>
+                                <li><a href="#">스낵 & 미니 디저트</a></li>
+                                <li><a href="#">아이스크림</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">상품</a>
+                            <ul>
+                                <li><a href="#">머그</a></li>
+                                <li><a href="#">글라스</a></li>
+                                <li><a href="#">플라스틱 텀블러</a></li>
+                                <li><a href="#">스테인리스 텀블러</a></li>
+                                <li><a href="#">보온병</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">선물세트</a></li>
+                                <li><a href="#">커피 용품</a></li>
+                                <li><a href="#">패키지 티(티바나)</a></li>
+                                <li><a href="#">시럽</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">카드</a>
+                            <ul>
+                                <li><a href="#">실물카드</a></li>
+                                <li><a href="#">스타벅스 모바일 카드</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">메뉴 이야기</a>
+                            <ul>
+                                <li><a href="#">스타벅스 티바나</a></li>
+                                <li><a href="#">스타벅스 콜드 브루</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_list"><a href="#">STORE</a>
+                        <div class="menu_list_sb"><a href="#">매장 찾기</a>
+                            <ul>
+                                <li><a href="#">퀵 검색</a></li>
+                                <li><a href="#">지역 검색</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_list_sb"><a href="#">드라이브 스루 매장</a></div>
+                        <div class="menu_list_sb"><a href="#">스타벅스 리저브 매장</a></div>
+                        <div class="menu_list_sb"><a href="#">커뮤니티 스토어 매장</a></div>
+                    </div>
+                    <div class="menu_list"><a href="#">ESG</a>
+                        <div class="menu_list_sb"><a href="#">커뮤니티</a></div>
+                        <div class="menu_list_sb"><a href="#">친환경</a></div>
+                        <div class="menu_list_sb"><a href="#">윤리구매</a></div>
+                        <div class="menu_list_sb"><a href="#">ESG 정보</a></div>
+
+                    </div>
+                    <div class="menu_list"><a href="#">STARBUCKS REWARDS</a>
+                        <div class="menu_list_sb"><a href="#">스타벅스 리워드</a></div>
+                        <div class="menu_list_sb"><a href="#">스타벅스 카드</a></div>
+                        <div class="menu_list_sb"><a href="#">스타벅스 모바일 카드</a></div>
+                    </div>
+                    <div class="menu_list"><a href="#">CORPORATE SALES</a>
+                        <div class="menu_list_sb"><a href="#">단체 및 기업 구매 안내</a></div>
+                        <div class="menu_list_sb"><a href="#">단체 주문 배달 안내</a></div>
+                    </div>
+                    <div class="menu_list"><a href="#">WHAT'S NEW</a>
+                        <div class="menu_list_sb"><a href="#">이벤트</a></div>
+                        <div class="menu_list_sb"><a href="#">뉴스</a></div>
+                        <div class="menu_list_sb"><a href="#">매장별 이벤트</a></div>
+                        <div class="menu_list_sb"><a href="#">공지사항</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div>
+            <div class="menu_list_sb"><a href="#">커피</a>
+                <ul>
+                    <li><a href="#">스타벅스 원두</a></li>
+                    <li><a href="#">스타벅스 비아</a></li>
+                    <li><a href="#">스타벅스 오리가미</a></li>
+                    <li><a href="#">스타벅스앳홈 by 캡슐</a></li>
+                    <li><a href="#">나와 어울리는 커피</a></li>
+                </ul>
+            </div>
+            <div class="menu_list_sb"><a href="#">커피 이야기</a>
+                <ul>
+                    <li><a href="#">농장에서 우리의 손으로</a></li>
+                    <li><a href="#">최상의 아라비카 원두</a></li>
+                    <li><a href="#">스타벅스 로스트 스펙트럼</a></li>
+                    <li><a href="#">스타벅스 디카페인</a></li>
+                </ul>
+            </div>
+            <div class="menu_list_sb"><a href="#">스타벅스 리저브</a>
+                <ul>
+                    <li><a href="#">RESERVE MAGAZINE</a></li>
+                </ul>
+            </div>
+            <div class="menu_list_sb"><a href="#">에스프레소 음료</a>
+                <ul>
+                    <li><a href="#">도피오</a></li>
+                    <li><a href="#">에스프레소 마키아또</a></li>
+                    <li><a href="#">아메리카노</a></li>
+                    <li><a href="#">마키아또</a></li>
+                    <li><a href="#">카푸치노</a></li>
+                    <li><a href="#">라떼</a></li>
+                    <li><a href="#">모카</a></li>
+                </ul>
+            </div>
+            <div class="menu_list_sb"><a href="#">최상의 커피를 즐기는 법<a>
+                <ul>
+                    <li><a href="#">커피 프레스</a></li>
+                    <li><a href="#">푸어 오버</a></li>
+                    <li><a href="#">아이스 푸어 오버</a></li>
+                    <li><a href="#">커피 메이커</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
